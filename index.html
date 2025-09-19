@@ -14,22 +14,65 @@ body {
     margin-right: auto;
 }
 
-p {
-  margin: 0.5em 0 0.5em 0; 
-  font-style: italic;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding:10px;
+.figure_label p{
+   width: 100%;
+   font-size: 1.0em; 
+   font-family:Helvetica Neue;
+   font-weight: normal;
+   font-style: normal;
+   margin: 0 0 0 0 ;
+   /*padding: 10px;*/
+   text-align: justify;
+   /*text-justify: inter-word;*/
+   margin-left: auto;
+   margin-right: auto;
 }
-    
-a {
-  color: slategrey;
-  margin: 0.5em 0 0.5em 0;
-  padding:10px;
+
+.figure_label .figure_number{
+   width:16%;
+   display:inline-block;
+   box-sizing:border-box;
+   /*border: 1px solid red;*/
+   padding: 0;
+   text-align:center;
+   vertical-align:top; 
+   margin-bottom: 0em;
+  }
+
+.figure_label .figure_caption{
+  text-align:justify;
+  text-justify:auto;
+  width:83%;
+  display:inline-block;
+  box-sizing:border-box;
+  padding: 0;
+  /*border: 1px solid red;*/
+  box-sizing: border-box;
+  vertical-align:top; 
+  font-size: 1.0em; 
+  font-family:Helvetica Neue;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 0em;
+  }
+  
+span {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+a {
+  color: RosyBrown;
+  margin: 0.5em 0 0.5em 0;
+  /*padding:10px;*/
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  text-justify: inter-word;
 }
     
 h1 {
@@ -53,7 +96,7 @@ h2 {
    text-align: center;
    margin: 0.25em 0 0 0;
    padding:10px;
-   max-width: 800px;
+   max-width: 600px;
    margin-left: auto;
    margin-right: auto;
 } 
@@ -71,18 +114,29 @@ h3 {
    margin-right: auto;
 } 
 
+h4 {
+   width: 100%;
+   font-size: 1.0em; 
+   font-family:Helvetica Neue;
+   font-weight: bold;
+   /*margin: 0 10 0 10;*/
+   text-align: justify;
+   margin-left: auto;
+   margin-right: auto;
+} 
+
 p {
    width: 100%;
    font-size: 1.0em; 
    font-family:Helvetica Neue;
    font-weight: normal;
    font-style: normal;
-   margin: 1em 0 1em 0;
-   padding:10px;
+   margin: 10px 0 0 0 ;
    text-align: justify;
    text-justify: inter-word;
    margin-left: auto;
    margin-right: auto;
+   margin-bottom: 0%;
 } 
 </style>
 </head>
@@ -90,15 +144,13 @@ p {
 <body>
 <div>
     <h1>
-        <span>UK Museums Online
-        </span>
+        UK Museums Online
     </h1>
 </div>
 <div>
     <h2>
-        <span>Digital Inequality, Engagement, and Algorithmic
+        Digital Inequality, Engagement, and Algorithmic
     Mediations
-        </span>
     </h2>
     <h3>
         Ellen Chalesworth
@@ -109,49 +161,52 @@ p {
     <p>The below figures represent those that benefit from some level of interactivity. These plotly visualisations enable readers to explore the data at different scales, select certain groups, and find out more about each data point. Clicking each of links below will open an interactive figure in a new tab.
     </p>
 </div>
+
+<h4>Methodology Chapter
+</h4>
+
+<div class="figure_label">
+
+<!--    <div class="figure_number"><a href="./visualisations/not_found.html" target="_blank" rel="noopener noreferrer">Figure 2.1</a>-->
+<!--    </div>-->
+<!--        <div class="figure_caption">Breakdown of the digital responses by region from the 2020 UNESCO report (UNESCO 2020).-->
+<!--    </div> -->
+<!--    <div class="figure_number"><a href="./visualisations/not_found.html" target="_blank" rel="noopener noreferrer">Figure 3.1</a>-->
+<!--    </div>-->
+<!--        <div class="figure_caption">The research cycle.-->
+<!--    </div> -->
+<!--    <div class="figure_number"><a href="./visualisations/not_found.html" target="_blank" rel="noopener noreferrer">Figure 3.2</a>-->
+<!--    </div>-->
+<!--        <div class="figure_caption">Summary of metadata categories included in each of the datasets and-->
+<!--studies across this thesis.-->
+<!--    </div> -->
+
+    <div class="figure_number"><a href="./visualisations/metho_1_distribution_governance.html" target="_blank" rel="noopener noreferrer">Figure 3.3</a>
+    </div>
+        <div class="figure_caption">Distribution of governance of museums in the sample dataset vs the
+    Arts Council’s Accredited List.
+    </div> 
+    <div class="figure_number"><a href="./visualisations/metho_2_ONS_distribution_sample_vs_full.html" target="_blank" rel="noopener noreferrer">Figure 3.4</a>
+    </div>
+        <div class="figure_caption">Distribution of ONS regions in the sample dataset.
+    </div> 
+    <div class="figure_number"><a href="./visualisations/res_1_his_facebook_followers.html" target="_blank" rel="noopener noreferrer">Figure 3.5</a>
+    </div>
+        <div class="figure_caption">Long-tailed distribution of the number of followers museums have on
+    Facebook.
+    </div> 
+    <div class="figure_number"><a href="./visualisations/metho_3_size_accredited_unaccredited.html" target="_blank" rel="noopener noreferrer">Figure 3.6</a>
+    </div>
+    <div class="figure_caption">Proportion of museum sizes for both unaccredited and accredited museums in the UK.
+    </div> 
+        <div class="figure_number"><a href="./visualisations/metho_4_size_percentage_country.html" target="_blank" rel="noopener noreferrer">Figure 3.7</a>
+    </div>
+    <div class="figure_caption">Percentage distribution of museum sizes in each country.
+    </div> 
     
-<!-- <div>
-    <a href="./visualisations/test_html.html" target="_blank" rel="noopener noreferrer">Figure 2.1</a>
-    <i>Breakdown of the digital responses by region from the 2020 UNESCO report (UNESCO 2020)</i>
-</div>
-    
-<div>
-    <a href="./visualisations/test_html.html" target="_blank" rel="noopener noreferrer">Figure 3.1</a>
-    <i>The research cycle</i>
-</div>
-    
-<div>
-    <a href="./visualisations/test_html.html" target="_blank" rel="noopener noreferrer">Figure 3.2</a>
-    <i>Summary of metadata categories included in each of the datasets and
-studies across this thesis</i>
-</div> -->
-<div>
-    <a href="./visualisations/metho_1_distribution_governance.html" target="_blank" rel="noopener noreferrer">Figure 3.3</a>
-    <i>Distribution of governance of museums in the sample dataset vs the
-Arts Council’s Accredited List.</i>
-</div>
-    
-<div>
-    <a href="./visualisations/metho_2_ONS_distribution_sample_vs_full.html" target="_blank" rel="noopener noreferrer">Figure 3.4</a>
-    <i>Distribution of ONS regions in the sample dataset.</i>
 </div>
 
 <div>
-    <a href="./visualisations/res_1_his_facebook_followers.html" target="_blank" rel="noopener noreferrer">Figure 3.5</a>
-    <i>Long-tailed distribution of the number of followers museums have on
-Facebook.</i>
-</div>
-
-<div>
-    <a href="./visualisations/metho_3_size_accredited_unaccredited.html" target="_blank" rel="noopener noreferrer">Figure 3.6</a>
-    <i>Proportion of museum sizes for both unaccredited and accredited museums in the UK. Size here will use the Mapping Museums Project
-classification system based on the number of annual visits: ‘small (0–10,000 visits); medium (10,001–50,000 visits); large (50,001 to one million visits); and huge (over one million visits)’ (Candlin et al., 2019, 57).</i>
-</div>
-
-<div>
-    <a href="./visualisations/metho_4_size_percentage_country.html" target="_blank" rel="noopener noreferrer">Figure 3.7</a>
-    <i>Percentage distribution of museum sizes in each country.</i>
-</div>
 
 <!-- <div>
     <a href="./visualisations/metho_1_distribution_governance.html" target="_blank" rel="noopener noreferrer">Figure 3.8</a>
@@ -174,6 +229,9 @@ in this thesis.</i>
     <i>Good (left) versus bad (right) clustering based on the inter-cluster and
 intra-cluster distance, created by Jonte Dancher (2022).</i>
 </div> -->
+
+<h4>Results Chapter
+</h4>
 
 <div>
     <a href="./visualisations/metho_4_size_percentage_country.html" target="_blank" rel="noopener noreferrer">Figure 4.1</a>
